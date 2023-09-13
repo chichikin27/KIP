@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 </head>
 
 <body>
+
+    <div class="map-container">
+        <div class="moving-point"></div>
+        <div class="moving-point"></div>
+        <div class="moving-point"></div>
+        <div class="moving-point"></div>
+        <div class="moving-point"></div>
+        <div class="moving-point"></div>
+        <div class="moving-point"></div>
+    </div>
 
     <div class="container mt-4 position-relative">
         <a href="https://www.skif-cargo.ru/">
@@ -19,8 +28,6 @@
         </a>
         <button type="button" class="btn btn-primary position-absolute top-100 start-100 translate-middle" data-toggle="modal" data-target="#loginModal">Вход</button>
     </div>
-
-
 
     <div class="container mt-4">
         <h1 class="mb-4">База знаний Скиф Карго</h1>
@@ -61,20 +68,20 @@
                 </ul>
             </div>
         </div>
-
     </div>
+
     <!-- Модальное окно для входа -->
     <div class="modal" tabindex="-1" role="dialog" id="loginModal">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Вход</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form action="login.php" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="login.php" method="post">
                   <div class="form-group row">
                       <label for="username" class="col-sm-4 col-form-label">Логин:</label>
                       <div class="col-sm-8">
@@ -92,13 +99,17 @@
                       <label class="form-check-label" for="rememberMe">Сохранить пароль</label>
                   </div>
                   <input type="submit" class="btn btn-primary" value="Войти">
-              </form>
+                </form>
             </div>
-          </div>
         </div>
-      </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+</div>
+
+
+<!-- Подключение скриптов -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

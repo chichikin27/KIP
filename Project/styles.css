@@ -1,7 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('russia-map.png') center/cover no-repeat fixed; /* фоновое изображение */
     color: #333;
+    overflow-x: hidden;  /* чтобы не было горизонтального прокручивания */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,4 +42,60 @@ a:hover {
     top: 110px; 
     right: 5px; 
     z-index: 100;
+}
+
+.moving-point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red; 
+    position: fixed;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movePoint1 {
+    0% { top: 10%; left: 10%; }
+    25% { top: 50%; left: 90%; }
+    50% { top: 90%; left: 50%; }
+    75% { top: 10%; left: 90%; }
+    100% { top: 50%; left: 10%; }
+}
+
+@keyframes movePoint2 {
+    0% { top: 90%; left: 90%; }
+    25% { top: 10%; left: 50%; }
+    50% { top: 50%; left: 10%; }
+    75% { top: 90%; left: 50%; }
+    100% { top: 10%; left: 90%; }
+}
+
+
+.moving-point:nth-child(1) {
+    animation: movePoint1 20s linear infinite;
+}
+
+.moving-point:nth-child(2) {
+    animation: movePoint2 20s linear infinite;
+}
+
+.moving-point:nth-child(3) {
+    animation: movePoint2 20s linear infinite;
+}
+
+.moving-point:nth-child(4) {
+    animation: movePoint2 20s linear infinite;
+}
+
+.moving-point:nth-child(5) {
+    animation: movePoint2 20s linear infinite;
+}
+
+.moving-point:nth-child(6) {
+    animation: movePoint2 20s linear infinite;
+}
+
+.moving-point:nth-child(7) {
+    animation: movePoint2 20s linear infinite;
 }
