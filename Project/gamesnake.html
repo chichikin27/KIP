@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База знаний Скиф Карго</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="https://www.skif-cargo.ru/">
+        <img id="corner-image" src="logo1.png" alt="Логотип компании Skif Cargo">
+    </a>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">База знаний Скиф Карго</h1>
+
+        <div class="search-container mb-4">
+            <div class="input-group">
+                <input type="text" id="searchInput" placeholder="Поиск..." class="form-control">
+                <div class="input-group-append">
+                    <button id="searchBtn" class="btn btn-primary">Поиск</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Игра "Змейка"</h2>
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+                <div id="score">Очки: 0</div>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Меню</h2>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item"><a href="#">Премка</a></li>
+                    <li class="list-group-item"><a href="#">Отгрузка</a></li>
+                    <li class="list-group-item"><a href="#">Размещение</a></li>
+                    <li class="list-group-item"><a href="#">Инвентариация</a></li>
+                    <li class="list-group-item"><a href="#">Работа с АРМ</a></li>
+                    <li class="list-group-item"><a href="#">Ошибки</a></li>
+                    <li class="list-group-item"><a href="#">Мини игры</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>
