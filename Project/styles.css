@@ -1,21 +1,122 @@
 body {
-    font-family: Arial, sans-serif;
-    background: url('russia-map.png') center/cover no-repeat fixed; /* фоновое изображение */
-    color: #333;
-    overflow-x: hidden;  /* чтобы не было горизонтального прокручивания */
+    background-image: url('russia-map.png');
+    background-position: center top; /* Чтобы изображение было сверху и по центру */
+    background-repeat: no-repeat;    /* Чтобы изображение не повторялось */
+    background-size: cover;          /* Чтобы изображение масштабировалось и заполняло весь экран */
+}
+
+.dark-theme .list-group-item, .dark-theme .card, .dark-theme .search-container, .dark-theme .input-group {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+.dark-theme .list-group-item a, .dark-theme .card-title, .dark-theme .card-text {
+    color: #ccc;
+}
+
+.dark-theme .input-group-text, .dark-theme .form-control {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: #ccc;
+}
+
+.dark-theme .input-group-text {
+    border-right-color: #444 !important;
+}
+
+.dark-theme .form-control::placeholder {
+    color: #888;
+}
+
+.dark-theme .btn-primary {
+    background-color: #555;
+    border-color: #444;
+    color: #ccc;
+}
+
+.dark-theme .btn-primary:hover {
+    background-color: #666;
+    border-color: #555;
+}
+
+.dark-theme {
+    background-image: url('russia-map.png');
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ccc; /* Цвет текста */
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #555;
 }
 
-a {
-    color: #666;
-    text-decoration: none;
+body[data-theme="dark"] h1, body[data-theme="dark"] h2, body[data-theme="dark"] h3, 
+body[data-theme="dark"] h4, body[data-theme="dark"] h5, body[data-theme="dark"] h6 {
+    color: #ccc;
 }
 
-a:hover {
-    text-decoration: underline;
+.dark-theme {
+    background-color: rgba(0, 0, 0, 0.7); /* Затемнение фона */
+    color: #ccc; /* Цвет текста */
+}
+
+.dark-theme a {
+    color: #ccc;
+}
+
+.dark-theme .btn-primary {
+    background-color: #333;
+    border-color: #333;
+}
+
+.dark-theme .card {
+    background-color: #333;
+    border-color: #333;
+}
+
+#themeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+body[data-theme="dark"] #themeToggle {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #555;
+}
+
+body[data-theme="dark"] h1, body[data-theme="dark"] h2, body[data-theme="dark"] h3, 
+body[data-theme="dark"] h4, body[data-theme="dark"] h5, body[data-theme="dark"] h6 {
+    color: #ccc;
+}
+
+#themeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+body[data-theme="dark"] #themeToggle {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
 }
 
 #corner-image {
@@ -138,4 +239,9 @@ a:hover {
 
 .moving-point:nth-child(7) {
     animation-name: movePoint7;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 }
