@@ -257,3 +257,7 @@ body[data-theme="dark"] .btn.go-home {
     color: #fff;
     border-color: #555;
 }
+
+.dark-mode #gameCanvas {
+    background-color: #666565;
+}
