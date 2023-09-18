@@ -1,3 +1,5 @@
+<!-- Чат -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,34 +49,39 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-8">
-                <h2>Новости</h2>
+<div class="row">
+    <div class="col-md-8">
+        <h2>Чат</h2>
 
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title">В разработке</h3>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3>Чат с помощником</h3>
             </div>
-
-            <div class="col-md-4">
-                <h2>Меню</h2>
-                <ul class="list-group mb-4">
-                    <li class="list-group-item"><a href="acceptance.html"><i class="#"></i>Приемка</a></li>
-                    <li class="list-group-item"><a href="Shipment.html"><i class="#"></i>Отгрузка</a></li>
-                    <li class="list-group-item"><a href="Placement.html"><i class="#"></i>Размещение</a></li>
-                    <li class="list-group-item"><a href="inventory.html"><i class="#"></i>Инвентаризация</a></li>
-                    <li class="list-group-item"><a href="Working_with_ARM.html"><i class="#"></i>Работа с АРМ</a></li>
-                    <li class="list-group-item"><a href="Mistakes.html"><i class="#"></i>Ошибки</a></li>
-                    <li class="list-group-item"><a href="gamesnake.html"><i class="fas fa-gamepad"></i> Змейка</a></li>
-                    <li class="list-group-item"><a href="https://www.skif-cargo.ru/about/#slide1"><i class="#"></i>О Компании</a></li>
-
-                    <li class="list-group-item"><a href="GPT.html"><i class="#"></i>Чат</a></li>
-                </ul>
+            <div class="chat-messages" id="chatMessages">
+                <!-- Здесь будут появляться сообщения -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Введите ваше сообщение...">
+                <button id="sendButton">Отправить</button>
             </div>
         </div>
+    </div>
+    <div class="col-md-4">
+        <h2>Меню</h2>
+        <ul class="list-group mb-4">
+            <li class="list-group-item"><a href="acceptance.html"><i class="#"></i>Приемка</a></li>
+            <li class="list-group-item"><a href="Shipment.html"><i class="#"></i>Отгрузка</a></li>
+            <li class="list-group-item"><a href="Placement.html"><i class="#"></i>Размещение</a></li>
+            <li class="list-group-item"><a href="inventory.html"><i class="#"></i>Инвентаризация</a></li>
+            <li class="list-group-item"><a href="Working_with_ARM.html"><i class="#"></i>Работа с АРМ</a></li>
+            <li class="list-group-item"><a href="Mistakes.html"><i class="#"></i>Ошибки</a></li>
+            <li class="list-group-item"><a href="gamesnake.html"><i class="fas fa-gamepad"></i> Змейка</a></li>
+            <li class="list-group-item"><a href="https://www.skif-cargo.ru/about/#slide1"><i class="#"></i>О Компании</a></li>
+            <li class="list-group-item"><a href="GPT.html"><i class="#"></i>Чат</a></li>
+        </ul>
+    </div>
+</div>
+
     </div>
 
     <!-- Модальное окно для входа -->

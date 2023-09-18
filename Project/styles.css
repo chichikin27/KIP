@@ -261,3 +261,42 @@ body[data-theme="dark"] .btn.go-home {
 .dark-mode #gameCanvas {
     background-color: #666565;
 }
+
+.chat-container {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 500px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.chat-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.chat-messages {
+    height: 80%;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-input {
+    display: flex;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+}
